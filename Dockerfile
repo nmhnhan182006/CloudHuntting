@@ -15,4 +15,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Lệnh cuối cùng: Khởi chạy dự án bằng python trực tiếp
-CMD ["/bin/sh", "render_start.sh"]
+CMD ["sh", "render_start.sh"]
