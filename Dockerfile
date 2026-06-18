@@ -1,5 +1,5 @@
-# Sử dụng bản Python 3.13 slim (vừa nhẹ vừa có sẵn bash)
-FROM python:3.13-slim
+# Sử dụng bản Python 3.11 slim (phiên bản ổn định, tương thích hoàn toàn với Railway)
+FROM python:3.11-slim
 
 # Thiết lập thư mục làm việc trong container
 WORKDIR /app
