@@ -14,5 +14,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy toàn bộ source code vào container
 COPY . .
 
-# Lệnh cuối cùng: Khởi chạy dự án bằng python trực tiếp
-ENTRYPOINT python start_all.py
+# Ép file script chuyển sang định dạng LF và cấp quyền thực thi
+RUN dos2unix render_start.sh
+RUN chmod +x render_start.sh
+
+# Lệnh cuối cùng: Khởi chạy dự án bằng bash
+CMD ["bash", "render_start.sh"]
