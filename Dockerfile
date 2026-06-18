@@ -19,4 +19,4 @@ RUN dos2unix render_start.sh
 RUN chmod +x render_start.sh
 
 # Lệnh cuối cùng: Khởi chạy dự án bằng bash
-CMD ["/bin/bash", "render_start.sh"]
+CMD ["sh", "render_start.sh"]
